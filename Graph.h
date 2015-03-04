@@ -101,7 +101,7 @@ public:
 
         graph = new Edge* [vertexNum];
         for(int i=0; i<vertexNum; i++){
-            graph[i] = new Edge [vertexNum];
+            graph[i] = new Edge[vertexNum];
         }
 
         argPath.clear();
@@ -109,11 +109,10 @@ public:
 
     ~Graph(){
         for(int i=0; i<vertexNum; i++){
-            delete [] graph[i];
+            delete graph[i];
         }
-        delete [] graph;
+        delete []graph;
     }
-
 
     void init(){
         int capacity;
